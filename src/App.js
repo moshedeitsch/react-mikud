@@ -14,7 +14,6 @@ const context = React.useContext(DarkModeContext);
     <div className={context.darkMode ? "dark-mode" : "light-mode"}>
       <Navbar/>
       <Form/>
-  
     </div>
   )
 }
