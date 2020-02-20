@@ -1,4 +1,5 @@
 import React, { useContext } from 'react'
+import '../style/form.css'
 import { useForm } from 'react-hook-form'
 import Result from './Result'
 import { FormContext } from '../context/FormContext'
@@ -14,7 +15,8 @@ const Form = (props) => {
     
 
     return (
-        <div>
+        <div className='container'>
+
             <form className="form-style-7" onSubmit={handleSubmit(context.onSubmit)}>
                 <ul>
                     <li>
@@ -44,7 +46,7 @@ const Form = (props) => {
                             <option value="ב">ב</option>
                             <option value="ג">ג</option>
                             <option value="ד">ד</option>
-                            <option value="ה">ה></option>
+                            <option value="ה">ה</option>
                             <option value="ו">ו</option>
 
                         </select>
