@@ -12,7 +12,7 @@ const FormProvider = (props) => {
 
     // eslint-disable-next-line react-hooks/exhaustive-deps
     const onSubmit = (data) => {
-        const apiUrl = `http://localhost:5001/${data.city}/${data.street}/${data.homeNumber}/${data.entrance}`
+        const apiUrl = `http://localhost:5001/${data.city.trim()}/${data.street.trim()}/${data.homeNumber.trim()}/${data.entrance.trim()}`
         setmikud({mikud: {}, loading: true})
         axios.get(apiUrl)
             .then(mikud =>  setmikud({mikud, loading: false}))
