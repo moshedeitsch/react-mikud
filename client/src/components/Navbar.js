@@ -15,7 +15,7 @@ const Navbar = (props) => {
                 <span style={{ color: darkMode ? "grey" : "yellow" }}>☀︎</span>
                 <span className="toggle">
                     <input
-                        checked={darkMode}
+                        checked={!darkMode}
                         onChange={() => setDarkMode(prevMode => !prevMode)}
                         id="checkbox"
                         className="checkbox"
