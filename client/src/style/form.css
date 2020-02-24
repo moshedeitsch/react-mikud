@@ -82,12 +82,7 @@ form-style-7{
 	padding: 0;
 	font-family: Georgia, "Times New Roman", Times, serif;
 }
-.form-style-7 input[type="text"]:focus,
-.form-style-7 input[type="number"]:focus,
-.form-style-7 select:focus 
-{
-	
-}
+
 .form-style-7 li > span{
 	display: block;
 	padding: 3px;
