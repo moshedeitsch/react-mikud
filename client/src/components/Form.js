@@ -12,7 +12,7 @@ const Form = (props) => {
 
     const context = useContext(FormContext);
 
-    
+
 
     return (
         <div className='container'>
@@ -42,6 +42,7 @@ const Form = (props) => {
                     <li>
                         <label htmlFor="entrance"> כניסה</label>
                         <select name="entrance" ref={register} >
+                            <option value="0">ד</option>
                             <option value="א">א</option>
                             <option value="ב">ב</option>
                             <option value="ג">ג</option>
@@ -59,8 +60,8 @@ const Form = (props) => {
                     </li>
                 </ul>
             </form>
-        
-           <Result/>
+
+            <Result />
         </div>
     );
 }

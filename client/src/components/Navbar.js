@@ -6,19 +6,20 @@ const Navbar = (props) => {
 
     const context = useContext(DarkModeContext);
 
+    const { darkMode, setDarkMode } = context
+
     return (
         <nav>
             <div className='first-item'>
             <div className="toggle-container">
-                <span style={{ color: context.darkMode ? "grey" : "yellow" }}>☀︎</span>
+                <span style={{ color: darkMode ? "grey" : "yellow" }}>☀︎</span>
                 <span className="toggle">
                     <input
-                        checked={context.darkMode}
-                        onChange={() => context.setDarkMode(prevMode => !prevMode)}
+                        checked={darkMode}
+                        onChange={() => setDarkMode(prevMode => !prevMode)}
                         id="checkbox"
                         className="checkbox"
-                        type="checkbox"
-                    />
+                        type="checkbox"/>
                     <label htmlFor="checkbox" />
                 </span>
                 <span style={{ color: context.darkMode ? "slateblue" : "grey" }}>☾</span>
