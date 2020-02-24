@@ -7,8 +7,16 @@ const app = express();
 app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
 
+
+app.use((req, res, next) => {
+  res.header('Access-Control-Allow-Origin', '*');
+  next();
+});
+
 // Homepage Route
-app.get("/", (req, res) => res.send("Home Page"));
+app.get("/", (req, res) => res.send("Make a Post Request"));
+
+
 
 app.get("/:city/:street/?:houseNumber/?:entrance", (req, res) => {
   let address = {
