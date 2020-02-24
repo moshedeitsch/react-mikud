@@ -42,7 +42,7 @@ const Form = (props) => {
                     <li>
                         <label htmlFor="entrance"> כניסה</label>
                         <select name="entrance" ref={register} >
-                            <option value="0">ד</option>
+                            <option value="0"></option>
                             <option value="א">א</option>
                             <option value="ב">ב</option>
                             <option value="ג">ג</option>
