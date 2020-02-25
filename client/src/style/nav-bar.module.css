@@ -56,17 +56,17 @@
     background-color: cyan;
   }
   
-  .toggle-container {
+  .toggleContainer {
     display: flex;
     margin: 0 auto;
     align-items: center;
   }
-  .first-item {
+  .firstItem {
     justify-self: start;
     align-self: center;
  }
   
-  .toggle-container > span {
+  .toggleContainer > span {
     font-size: 1.2em;
     background: none;
     border: none;
@@ -76,7 +76,7 @@
     margin-right: 2px;
   }
   
-  .toggle-container > span:last-child {
+  .toggleContainer > span:last-child {
     margin-top: 5px;
   }
   

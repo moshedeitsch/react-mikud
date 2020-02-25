@@ -1,5 +1,5 @@
 import React, { useContext } from 'react'
-import '../style/../style/result.css'
+import styles from '../style/result.module.css'
 import { FormContext } from '../context/FormContext'
 
 const Result = (props) => {
@@ -11,13 +11,13 @@ const Result = (props) => {
 
 
     return (
-        <div className='result'>
-            {loading ? <div className="loader"><div></div><div></div></div> : loading}
+        <div className={styles.result}>
+            {loading ? <div className={styles.loader}><div></div><div></div></div> : loading}
 
             {zipCode ? <div style={{display: 'inline-grid'}}>
                 <span>המיקוד לכתובת הינו: {zipCode}</span>
                 <br/>
-                <button  onClick={() => { navigator.clipboard.writeText(zipCode) }}>Copy</button>
+                <button className={styles.resultButton}  onClick={() => { navigator.clipboard.writeText(zipCode) }}>Copy</button>
 
                 </div> : " "}
 

@@ -39,14 +39,14 @@
   }
 }
 
-.result button  {
-  background: #2471FF;
-  border: none;
-  padding: 10px 20px 10px 20px;
-  border-bottom: 3px solid #5994FF;
+.resultButton {
+	background: #2471FF;
+	border: none;
+	padding: 10px 20px 10px 20px;
+	border-bottom: 3px solid #5994FF;
   border-radius: 3px;
 }
 
-.result button:hover{
-  background: #6B9FFF;
+.resultButton:hover{
+	background: #6B9FFF;
 }

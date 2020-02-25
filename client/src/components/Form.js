@@ -1,5 +1,5 @@
 import React, { useContext } from 'react'
-import '../style/form.css'
+import styles from '../style/form.module.css'
 import { useForm } from 'react-hook-form'
 import Result from './Result'
 import { FormContext } from '../context/FormContext'
@@ -15,29 +15,29 @@ const Form = (props) => {
 
 
     return (
-        <div className='container'>
+        <div className={styles.container}>
 
-            <form className="form-style-7" onSubmit={handleSubmit(context.onSubmit)}>
+            <form className={styles.formStyle} onSubmit={handleSubmit(context.onSubmit)}>
                 <ul>
                     <li>
                         <label htmlFor="city">עיר</label>
                         <input type="text" name="city" maxLength="100" ref={register({ required: true, minLength: 2 })} />
                         <span>הקלד בבקשה שם עיר</span>
-                        {errors.city && <span className='error-message'>עיר חובה</span>}
+                        {errors.city && <span className={styles.errorMessage}>עיר חובה</span>}
                     </li>
 
                     <li>
                         <label htmlFor="street">רחוב</label>
                         <input type="text" name="street" maxLength="100" ref={register({ required: true })} />
                         <span>הקלד בבקשה שם רחוב</span>
-                        {errors.street && <span className='error-message'>רחוב חובה</span>}
+                        {errors.street && <span className={styles.errorMessage}>רחוב חובה</span>}
 
                     </li>
                     <li>
                         <label htmlFor="homeNumber">מספר בית</label>
                         <input type="number" name="homeNumber" maxLength="100" ref={register({ required: true })} />
                         <span>הקלד בבקשה מספר בית</span>
-                        {errors.homeNumber && <span className='error-message'>מספר בית חובה</span>}
+                        {errors.homeNumber && <span className={styles.errorMessage}>מספר בית חובה</span>}
                     </li>
                     <li>
                         <label htmlFor="entrance"> כניסה</label>
@@ -52,11 +52,11 @@ const Form = (props) => {
 
                         </select>
                         <span>הקלד בבקשה מספר כניסה</span>
-                        {errors.entrance && <span className='error-message'>מספר כניסה חובה</span>}
+                        {errors.entrance && <span className={styles.errorMessage}>מספר כניסה חובה</span>}
 
                     </li>
                     <li>
-                        <input type="submit" value="חפש" />
+                        <input className={styles.formStyleButton} type="submit" value="חפש" />
                     </li>
                 </ul>
             </form>

@@ -1,13 +1,12 @@
 
 .container {
-	padding-top: 100px;
 	display: grid;
 	grid-template-columns:1fr;
-	grid-template-rows: 2fr 1fr;
+	grid-template-rows: 1fr 100px;
 	justify-content: space-between;
 }
 
-form {
+.formStyle {
     display: flex;
   	flex-wrap: wrap;
   	text-align: center;
@@ -15,38 +14,38 @@ form {
 }
 
 
-form-style-7{
+.formStyle{
 	max-width:400px;
 	margin:50px auto;
 	border-radius:2px;
 	padding:20px;
 	font-family: Georgia, "Times New Roman", Times, serif;
 }
-.form-style-7 h1{
+.formStyle h1{
 	display: block;
 	text-align: center;
 	padding: 0;
 	margin: 0px 0px 20px 0px;
 	font-size:x-large;
 }
-.form-style-7 ul{
+.formStyle ul{
 	list-style:none;
 	padding:0;
 	margin:0;	
 }
-.form-style-7 li{
+.formStyle li{
 	display: block;
 	padding: 9px;
 	border:1px solid ;
 	margin-bottom: 30px;
 	border-radius: 3px;
 }
-.form-style-7 li:last-child{
+.formStyle li:last-child{
 	border:none;
 	margin-bottom: 0px;
 	text-align: center;
 }
-.form-style-7 li > label{
+.formStyle li > label{
 	display: block;
 	float: right;
 	margin-top: -19px;
@@ -57,17 +56,17 @@ form-style-7{
 	overflow: hidden;
 	font-family: Arial, Helvetica, sans-serif;
 }
-.form-style-7 input[type="text"],
-.form-style-7 input[type="date"],
-.form-style-7 input[type="datetime"],
-.form-style-7 input[type="email"],
-.form-style-7 input[type="number"],
-.form-style-7 input[type="search"],
-.form-style-7 input[type="time"],
-.form-style-7 input[type="url"],
-.form-style-7 input[type="password"],
-.form-style-7 textarea,
-.form-style-7 select 
+.formStyle input[type="text"],
+.formStyle input[type="date"],
+.formStyle input[type="datetime"],
+.formStyle input[type="email"],
+.formStyle input[type="number"],
+.formStyle input[type="search"],
+.formStyle input[type="time"],
+.formStyle input[type="url"],
+.formStyle input[type="password"],
+.formStyle textarea,
+.formStyle select 
 {
 	box-sizing: border-box;
 	-webkit-box-sizing: border-box;
@@ -83,7 +82,7 @@ form-style-7{
 	font-family: Georgia, "Times New Roman", Times, serif;
 }
 
-.form-style-7 li > span{
+.formStyle li > span{
 	display: block;
 	padding: 3px;
 	margin: 0 -9px -9px -9px;
@@ -91,11 +90,10 @@ form-style-7{
 	font-family: Arial, Helvetica, sans-serif;
 	font-size: 11px;
 }
-.form-style-7 textarea{
+.formStyle textarea{
 	resize:none;
 }
-.form-style-7 input[type="submit"],
-.form-style-7 input[type="button"]{
+.formStyleButton{
 	background: #2471FF;
 	border: none;
 	padding: 10px 20px 10px 20px;
@@ -103,8 +101,7 @@ form-style-7{
 	border-radius: 3px;
 }
 
-.form-style-7 input[type="submit"]:hover,
-.form-style-7 input[type="button"]:hover{
+.formStyleButton:hover{
 	background: #6B9FFF;
 }
 * {
@@ -115,6 +112,6 @@ form-style-7{
 
 
 
-.error-message {
+.errorMessage {
 	color: red;
 }
