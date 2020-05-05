@@ -6,6 +6,10 @@
 .pnp.js
 <<<<<<< HEAD
 node_modules/
+=======
+./client/node_modules
+
+>>>>>>> 9633e9318db2280bbaa20a719b7e154153eda47f
 
 # testing
 /coverage
