@@ -4,6 +4,7 @@
 /node_modules
 /.pnp
 .pnp.js
+<<<<<<< HEAD
 node_modules/
 
 # testing
@@ -11,7 +12,6 @@ node_modules/
 
 # production
 /build
-
 # misc
 .DS_Store
 .env.local
